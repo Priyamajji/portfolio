@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Priyanka Majji | Business and IT Analyst</title>
+<meta name="description" content="Priyanka Majji, business and IT analyst in the UK. Five years across IT services and financial services: incident management, client and technical liaison, fraud investigation and invoice operations. MSc Artificial Intelligence, Aston University.">
+<meta name="author" content="Priyanka Majji">
+<meta property="og:title" content="Priyanka Majji | Business and IT Analyst">
+<meta property="og:description" content="Five years across IT services and financial services. MSc Artificial Intelligence, Aston University. Open to analyst roles anywhere in the UK.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c0b10;
+  --bg-2:#15131c;
+  --card:#1c1a25;
+  --line:#2c2938;
+  --text:#f3f1f7;
+  --muted:#a9a4b8;
+  --accent:#f0a33a;
+  --accent-2:#e2683c;
+  --accent-ink:#1a1206;
+  --radius:10px;
+  --gutter:clamp(16px,4vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img{max-width:100%}
+.display{font-family:Oswald,Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1}
+
+/* Nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:20;display:flex;align-items:center;gap:24px;padding:14px var(--gutter);background:linear-gradient(180deg,rgba(12,11,16,.95),rgba(12,11,16,0));transition:background .25s}
+.nav.solid{background:rgba(12,11,16,.96);border-bottom:1px solid var(--line)}
+.brand{font-family:Oswald,sans-serif;font-weight:700;font-size:22px;letter-spacing:.12em;color:var(--accent);text-decoration:none;text-transform:uppercase}
+.nav ul{display:flex;gap:22px;list-style:none;margin-left:12px}
+.nav ul a{text-decoration:none;font-size:14px;color:var(--muted)}
+.nav ul a:hover{color:var(--text)}
+.nav .cta{margin-left:auto}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:6px;padding:10px 20px;font:600 15px Inter,sans-serif;text-decoration:none;cursor:pointer;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{background:#ffb653}
+.btn-ghost{background:rgba(255,255,255,.12);color:var(--text)}
+.btn-ghost:hover{background:rgba(255,255,255,.2)}
+.btn-sm{padding:7px 14px;font-size:13px}
+
+/* Hero */
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;padding:120px var(--gutter) 72px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(60% 70% at 78% 30%,rgba(240,163,58,.28),transparent 70%),
+  radial-gradient(50% 60% at 95% 85%,rgba(226,104,60,.22),transparent 70%),
+  linear-gradient(90deg,var(--bg) 25%,rgba(12,11,16,.4) 70%,var(--bg) 100%);z-index:0}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:180px;background:linear-gradient(0deg,var(--bg),transparent);z-index:0}
+.hero-mark{position:absolute;right:calc(var(--gutter) - 2vw);top:12vh;font-family:Oswald,sans-serif;font-weight:700;font-size:min(46vw,560px);line-height:.8;color:transparent;-webkit-text-stroke:2px rgba(240,163,58,.22);z-index:0;user-select:none;pointer-events:none}
+.hero-inner{position:relative;z-index:1;max-width:720px}
+.kicker{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+.kicker::before{content:"";width:4px;height:22px;background:var(--accent);border-radius:2px}
+.hero h1{font-size:clamp(56px,11vw,128px);font-weight:700}
+.hero .role{font-family:Oswald,sans-serif;font-size:clamp(20px,3vw,30px);color:var(--accent);text-transform:uppercase;letter-spacing:.04em;margin:10px 0 18px}
+.hero p.lede{font-size:clamp(16px,1.6vw,19px);color:#d8d4e2;max-width:600px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;margin:22px 0 28px;font-size:13px}
+.meta .hl{color:var(--accent);font-weight:600}
+.tag{border:1px solid var(--line);background:rgba(255,255,255,.04);border-radius:4px;padding:2px 9px;color:#cfcadb;font-size:12.5px;white-space:nowrap}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+
+/* Rows */
+main{position:relative;z-index:1}
+.row{padding:28px 0 18px}
+.row-head{padding:0 var(--gutter);margin-bottom:14px}
+.row-head h2{font-size:clamp(22px,2.6vw,28px);font-weight:600;font-family:Oswald,sans-serif;letter-spacing:.02em}
+.row-head p{color:var(--muted);font-size:14px}
+.rail-wrap{position:relative}
+.rail{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px var(--gutter) 22px;scroll-padding:0 var(--gutter);scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.rail::-webkit-scrollbar{height:6px}
+.rail::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
+.rail-btn{position:absolute;top:8px;bottom:22px;width:44px;border:0;background:rgba(12,11,16,.7);color:var(--text);font-size:26px;cursor:pointer;opacity:0;transition:opacity .2s;z-index:2}
+.rail-wrap:hover .rail-btn{opacity:1}
+.rail-btn.prev{left:0}.rail-btn.next{right:0}
+@media (hover:none){.rail-btn{display:none}}
+
+.card{flex:0 0 clamp(250px,24vw,310px);scroll-snap-align:start;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;cursor:pointer;text-align:left;color:inherit;font:inherit;display:flex;flex-direction:column;transition:transform .2s,border-color .2s,box-shadow .2s}
+.card:hover,.card:focus-visible{transform:translateY(-4px) scale(1.02);border-color:var(--accent);box-shadow:0 14px 34px rgba(0,0,0,.5);outline:none}
+.poster{position:relative;height:140px;padding:14px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.poster .badge{align-self:flex-start;font-size:10.5px;font-weight:700;letter-spacing:.2em;background:rgba(0,0,0,.45);padding:3px 8px;border-radius:3px;color:#fff}
+.poster .big{font-family:Oswald,sans-serif;font-weight:700;font-size:30px;line-height:1;text-transform:uppercase;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.35)}
+.poster .glyph{position:absolute;right:-10px;bottom:-30px;font-family:Oswald,sans-serif;font-weight:700;font-size:150px;line-height:1;color:rgba(255,255,255,.12)}
+.g1{background:linear-gradient(135deg,#7a3c12,#e2683c)}
+.g2{background:linear-gradient(135deg,#3a1f5c,#8a4fd1)}
+.g3{background:linear-gradient(135deg,#123d4f,#2f93b5)}
+.g4{background:linear-gradient(135deg,#5a1a2b,#c94a6a)}
+.g5{background:linear-gradient(135deg,#1f4a2c,#4aa86a)}
+.g6{background:linear-gradient(135deg,#5b4410,#d9a531)}
+.card-body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.card h3{font-size:16px;font-weight:600;line-height:1.3}
+.card .yr{font-size:12.5px;color:var(--muted);white-space:nowrap}
+.card p{font-size:14px;color:#cfcadb}
+.card .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:4px}
+
+/* About */
+.about{padding:64px var(--gutter);display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:start;border-top:1px solid var(--line);margin-top:24px;background:linear-gradient(180deg,var(--bg-2),var(--bg))}
+.about h2{font-size:clamp(34px,5vw,56px);margin-bottom:6px}
+.about .sub{color:var(--muted);font-size:14px;margin-bottom:22px}
+.about p{margin-bottom:14px;color:#dcd8e6;max-width:640px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.stat b{display:block;font-family:Oswald,sans-serif;font-size:40px;line-height:1;color:var(--accent)}
+.stat span{font-size:13.5px;color:var(--muted)}
+.skills{margin-top:26px}
+.skills h3{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-size:13.5px}
+
+/* Contact */
+.contact{padding:80px var(--gutter);text-align:center;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 80% at 50% 100%,rgba(240,163,58,.18),transparent 70%)}
+.contact > *{position:relative}
+.contact h2{font-size:clamp(36px,6vw,64px);margin:6px 0 14px}
+.contact p{color:#d8d4e2;max-width:560px;margin:0 auto 26px}
+.contact .kicker{justify-content:center}
+.contact-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+footer{padding:22px var(--gutter);border-top:1px solid var(--line);color:var(--muted);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+/* Modal */
+dialog{border:0;padding:0;background:transparent;max-width:min(720px,calc(100vw - 32px));width:100%;margin:auto;color:var(--text)}
+dialog::backdrop{background:rgba(0,0,0,.72);backdrop-filter:blur(3px)}
+.modal{background:var(--bg-2);border:1px solid var(--line);border-radius:14px;overflow:hidden;max-height:calc(100vh - 48px);display:flex;flex-direction:column}
+.modal .poster{height:170px;padding:20px}
+.modal .poster .big{font-size:clamp(28px,5vw,40px)}
+.modal-body{padding:22px 24px 26px;overflow-y:auto}
+.modal-body .sub{color:var(--muted);font-size:14px;margin-bottom:14px}
+.modal-body ul{list-style:none;display:grid;gap:12px}
+.modal-body li{padding-left:16px;position:relative;color:#dcd8e6;font-size:15px}
+.modal-body li::before{content:"";position:absolute;left:0;top:.65em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.modal-body li strong{color:var(--text)}
+.modal-body h4{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:18px 0 10px}
+.close{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;border:0;background:rgba(0,0,0,.55);color:#fff;font-size:20px;cursor:pointer;z-index:2}
+.modal-wrap{position:relative}
+
+@media (max-width:860px){
+  .nav ul{display:none}
+  .about{grid-template-columns:1fr;gap:32px}
+  .hero{min-height:auto;padding-top:110px}
+  .hero-mark{font-size:70vw;top:8vh;opacity:.7}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a class="brand" href="#top">Priyanka</a>
+  <ul>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#strengths">Strengths</a></li>
+    <li><a href="#learning">Education</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="btn btn-primary btn-sm cta" href="#contact">Hire me</a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-mark" aria-hidden="true">PM</div>
+  <div class="hero-inner">
+    <div class="kicker">Now showing</div>
+    <h1 class="display">Priyanka Majji</h1>
+    <div class="role">Business and IT Analyst</div>
+    <p class="lede">I sit between the people who have a problem and the teams who fix it. Five years across IT services and financial services, working on incidents, fraud cases and invoices, and now finishing an MSc in Artificial Intelligence at Aston University.</p>
+    <div class="meta">
+      <span class="hl">Open to work</span>
+      <span class="tag">5+ years</span>
+      <span class="tag">ServiceNow</span>
+      <span class="tag">Fraud and collections</span>
+      <span class="tag">Python and Excel</span>
+      <span class="tag">MSc AI</span>
+    </div>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#experience">&#9654;&nbsp; See my experience</a>
+      <button class="btn btn-ghost" type="button" data-open="about-me">&#9432;&nbsp; More info</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="row" id="experience">
+    <div class="row-head">
+      <h2>Experience</h2>
+      <p>Where the work happened. Click a card for the detail.</p>
+    </div>
+    <div class="rail-wrap"><button class="rail-btn prev" aria-label="Scroll left">&#8249;</button><div class="rail" data-rail="experience"></div><button class="rail-btn next" aria-label="Scroll right">&#8250;</button></div>
+  </section>
+
+  <section class="row" id="strengths">
+    <div class="row-head">
+      <h2>What I bring</h2>
+      <p>The skills I have used on the job, and the ones I built during my MSc.</p>
+    </div>
+    <div class="rail-wrap"><button class="rail-btn prev" aria-label="Scroll left">&#8249;</button><div class="rail" data-rail="strengths"></div><button class="rail-btn next" aria-label="Scroll right">&#8250;</button></div>
+  </section>
+
+  <section class="row" id="learning">
+    <div class="row-head">
+      <h2>Education and certifications</h2>
+      <p>Degrees and the certifications I have completed.</p>
+    </div>
+    <div class="rail-wrap"><button class="rail-btn prev" aria-label="Scroll left">&#8249;</button><div class="rail" data-rail="learning"></div><button class="rail-btn next" aria-label="Scroll right">&#8250;</button></div>
+  </section>
+
+  <section class="about" id="about">
+    <div>
+      <div class="kicker">About me</div>
+      <h2 class="display">The analyst behind the tickets</h2>
+      <div class="sub">Priyanka Majji | United Kingdom</div>
+      <p>Most of my work has been about getting things sorted for people. At Tata Consultancy Services I resolved incidents and service requests in ServiceNow, including SAP SD application issues. I worked directly with clients to understand the business problem, turned it into clear requirements for the technical team, and then explained the fix back in plain language.</p>
+      <p>Before that I spent two years at Synchrony Financial. I started in Collections, helping customers agree repayment plans, and was promoted to the Fraud Investigation team after one year, where I reviewed transaction history and account activity to reach an outcome on each dispute. At Tech Mahindra I validated UPS invoices against approvals and policy checks, was promoted to Subject Matter Expert and trained a batch of new joiners.</p>
+      <p>I am now completing an MSc in Artificial Intelligence at Aston University in Birmingham, and I hold AWS and Microsoft Azure certifications. I am looking for business analyst, data and information analyst, IT service management and finance operations roles anywhere in the UK, and I can start immediately.</p>
+    </div>
+    <div>
+      <div class="stats">
+        <div class="stat"><b>5+</b><span>Years in IT services and financial services</span></div>
+        <div class="stat"><b>2</b><span>Promotions, to Fraud Investigation and to Subject Matter Expert</span></div>
+        <div class="stat"><b>3</b><span>Employers: TCS, Synchrony Financial, Tech Mahindra</span></div>
+        <div class="stat"><b>MSc</b><span>Artificial Intelligence, Aston University</span></div>
+      </div>
+      <div class="skills">
+        <h3>Tools and skills</h3>
+        <div class="chips">
+          <span class="chip">ServiceNow</span>
+          <span class="chip">Incident and SLA management</span>
+          <span class="chip">Requirements gathering</span>
+          <span class="chip">Root-cause analysis</span>
+          <span class="chip">Stakeholder liaison</span>
+          <span class="chip">Microsoft Excel</span>
+          <span class="chip">Python</span>
+          <span class="chip">Transaction data analysis</span>
+          <span class="chip">Fraud investigation</span>
+          <span class="chip">Collections</span>
+          <span class="chip">Invoice validation</span>
+          <span class="chip">SAP SD (application support)</span>
+          <span class="chip">Machine learning</span>
+          <span class="chip">Generative AI</span>
+          <span class="chip">AWS</span>
+          <span class="chip">Microsoft Azure</span>
+          <span class="chip">Microsoft Office</span>
+          <span class="chip">Git and GitHub (learning)</span>
+          <span class="chip">Salesforce and HubSpot (basic)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="kicker">Ready when you are</div>
+    <h2 class="display">Let's talk</h2>
+    <p>Open to business analyst, data and information analyst, IT service management and finance operations roles. Based in the UK, happy to relocate, and available to start immediately.</p>
+    <div class="contact-actions">
+      <a class="btn btn-primary" href="mailto:priya.majji2@gmail.com">Email me</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/priyanka-majji-05737a3ab" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>Priyanka Majji | United Kingdom</span>
+  <span><a href="mailto:priya.majji2@gmail.com">priya.majji2@gmail.com</a> | <a href="https://www.linkedin.com/in/priyanka-majji-05737a3ab" target="_blank" rel="noopener">LinkedIn</a></span>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dlg-title">
+  <div class="modal-wrap">
+    <button class="close" type="button" aria-label="Close">&times;</button>
+    <div class="modal" id="dlg-content"></div>
+  </div>
+</dialog>
+
+<script>
+const DATA = {
+  experience: [
+    {id:"tcs", badge:"ROLE", big:"TCS", glyph:"T", g:"g1",
+     title:"Consultant, SAP SD application support", org:"Tata Consultancy Services, India", yr:"2024 - 2025",
+     line:"Client tickets owned from logging to closure, through ServiceNow.",
+     tags:["ServiceNow","SAP SD","Incident management"],
+     points:[
+      ["Incident resolution","Resolved SAP SD incidents and service requests raised by clients through ServiceNow, owning each ticket from logging through investigation to closure."],
+      ["Client and technical liaison","Worked directly with clients as the main link to the technical teams. I gathered the business problem, turned it into clear technical requirements, and explained the fix back to the client."],
+      ["Troubleshooting","Diagnosed SAP SD and ERP issues by replicating problems, analysing transaction data and configuration, and tracing root causes to stop recurring incidents."],
+      ["Prioritisation","Handled several client tickets at once by priority, kept to service-level targets and updated clients throughout."],
+      ["Knowledge sharing","Documented resolutions and workflows to build a shared knowledge base, and worked with functional and technical teams so fixes met business needs."]
+     ]},
+    {id:"syf-fraud", badge:"PROMOTED", big:"Fraud", glyph:"S", g:"g4",
+     title:"Senior Consultant, Fraud Investigation", org:"Synchrony Financial, India", yr:"2022 - 2023",
+     line:"Fraud disputes reviewed case by case, with records ready for audit.",
+     tags:["Fraud investigation","Audit","Transaction analysis"],
+     points:[
+      ["Dispute investigation","Investigated fraud disputes raised by customers by reviewing transaction history, account activity and supporting evidence to reach an outcome on each case."],
+      ["Policy and audit","Applied fraud policies and procedures consistently, recording findings and decisions accurately for audit."],
+      ["Resolution","Communicated case outcomes to customers and worked with internal teams on complex or escalated disputes."],
+      ["Progression","Moved to this team on promotion after one year in the Collections department."]
+     ]},
+    {id:"syf-coll", badge:"ROLE", big:"Collections", glyph:"S", g:"g2",
+     title:"Senior Consultant, Collections", org:"Synchrony Financial, India", yr:"2021 - 2022",
+     line:"Overdue accounts, handled with care and the right compliance steps.",
+     tags:["Collections","Compliance","Customer accounts"],
+     points:[
+      ["Account management","Managed customer accounts with overdue balances, contacting customers to agree repayment arrangements."],
+      ["Compliance","Handled sensitive financial conversations professionally, following compliance and customer-treatment guidelines, and kept account records accurate."],
+      ["Promotion","Promoted to the Fraud Investigation team after one year."]
+     ]},
+    {id:"techm", badge:"PROMOTED", big:"Tech Mahindra", glyph:"M", g:"g6",
+     title:"Technical Support Associate, then Subject Matter Expert", org:"Tech Mahindra, India (UPS account)", yr:"2019 - 2021",
+     line:"UPS invoices checked against approvals and policy before clearance.",
+     tags:["Invoice validation","Training","Quality checks"],
+     points:[
+      ["Invoice processing","Processed and validated UPS invoices, checking that each one had the correct approvals and passed all policy checks before clearance."],
+      ["Exception handling","Identified invoices with discrepancies, missing approvals or policy breaches, raised them for correction and handled escalations."],
+      ["Progression","Promoted to Subject Matter Expert and became the team's go-to person for complex cases and process questions."],
+      ["Training","Trained a batch of new joiners on invoice processing, policy checks and quality standards as part of their onboarding."]
+     ]}
+  ],
+  strengths: [
+    {id:"liaison", badge:"STRENGTH", big:"Stakeholders", glyph:"S", g:"g3",
+     title:"Client and stakeholder liaison", line:"Turning a business problem into something a technical team can act on.",
+     tags:["Requirements","Communication"],
+     points:[["What it means","Acting as the link between clients and technical teams, turning business issues into technical requirements, and explaining resolutions in plain language."],["Where I did it","Day to day at TCS, as the client's main contact with the technical teams."]]},
+    {id:"itsm", badge:"STRENGTH", big:"ServiceNow", glyph:"I", g:"g1",
+     title:"IT service management", line:"The full incident lifecycle, from logging to closure.",
+     tags:["ServiceNow","SLA","Knowledge base"],
+     points:[["What it means","Incident lifecycle (logging, triage, diagnosis, resolution, closure), priority and SLA management, knowledge base articles and resolution documentation."],["Where I did it","At TCS, working client tickets in ServiceNow."]]},
+    {id:"finops", badge:"STRENGTH", big:"Finance Ops", glyph:"F", g:"g4",
+     title:"Financial operations and compliance", line:"Invoices, fraud disputes and collections, with audit-ready records.",
+     tags:["Invoices","Fraud","Collections"],
+     points:[["What it means","Invoice validation, approval and policy compliance checks, fraud dispute investigation, collections and audit-ready case records."],["Where I did it","At Synchrony Financial (Collections, then Fraud Investigation) and at Tech Mahindra on the UPS invoice process."]]},
+    {id:"data", badge:"STRENGTH", big:"Data", glyph:"D", g:"g5",
+     title:"Programming and data", line:"Python and Excel for checking, analysing and reporting on data.",
+     tags:["Python","Excel","Data analysis"],
+     points:[["What it means","Python for data handling and scripting, Microsoft Excel for data analysis, validation and reporting, and analysis of transaction and account data."],["Where I use it","Transaction and account data in my fraud and support roles, and Python throughout my MSc."]]},
+    {id:"erp", badge:"STRENGTH", big:"ERP Support", glyph:"E", g:"g6",
+     title:"ERP application support", line:"Replicating issues and tracing root causes in SAP SD.",
+     tags:["SAP SD","Root cause","Escalation"],
+     points:[["What it means","SAP SD (Sales and Distribution) application support, incident and service request resolution, root-cause analysis, issue replication and escalation to technical teams."],["Where I did it","At TCS, supporting client SAP SD issues raised through ServiceNow."]]},
+    {id:"ai", badge:"MSc", big:"AI and ML", glyph:"A", g:"g2",
+     title:"AI and machine learning", line:"Machine learning fundamentals, generative AI and model evaluation.",
+     tags:["Machine learning","Generative AI","Python"],
+     points:[["What it means","Machine learning fundamentals, generative AI and model evaluation, covered in my MSc coursework."],["Where","MSc Artificial Intelligence, Aston University, 2025 - 2026."]]},
+    {id:"lead", badge:"STRENGTH", big:"Training", glyph:"T", g:"g3",
+     title:"Training and leadership", line:"Go-to person for complex cases, and trainer for new joiners.",
+     tags:["SME","Onboarding","Documentation"],
+     points:[["What it means","Subject Matter Expert, training new joiners, knowledge transfer, quality checks and process documentation."],["Where I did it","At Tech Mahindra after promotion to Subject Matter Expert, and documenting resolutions at TCS."]]}
+  ],
+  learning: [
+    {id:"msc", badge:"EDUCATION", big:"Aston", glyph:"A", g:"g2",
+     title:"MSc Artificial Intelligence", org:"Aston University, Birmingham", yr:"2025 - 2026",
+     line:"Machine learning, generative AI and model evaluation.", tags:["AI","Machine learning"],
+     points:[["Course","MSc Artificial Intelligence at Aston University, Birmingham."],["Topics","Machine learning fundamentals, generative AI and model evaluation, with Python."]]},
+    {id:"btech", badge:"EDUCATION", big:"B.Tech IT", glyph:"G", g:"g3",
+     title:"B.Tech, Information Technology", org:"GMR Institute of Technology, India", yr:"2014 - 2018",
+     line:"Information Technology degree, CGPA 8.0 out of 10.", tags:["Information Technology"],
+     points:[["Degree","B.Tech in Information Technology, GMR Institute of Technology, India."],["Result","CGPA 8.0 out of 10."]]},
+    {id:"aws", badge:"CERTIFIED", big:"AWS", glyph:"A", g:"g1",
+     title:"AWS Certified Cloud Practitioner", org:"Amazon Web Services",
+     line:"Core cloud services, security and pricing models.", tags:["Cloud","AWS"],
+     points:[["Covers","Core AWS cloud services, security and pricing models."]]},
+    {id:"azure", badge:"CERTIFIED", big:"Azure", glyph:"Z", g:"g3",
+     title:"Microsoft Certified: Azure Fundamentals", org:"Microsoft",
+     line:"Cloud concepts and core Azure services.", tags:["Cloud","Azure"],
+     points:[["Covers","Microsoft Azure fundamentals: core cloud services, security and pricing models."]]},
+    {id:"crm", badge:"CERTIFIED", big:"CRM", glyph:"C", g:"g5",
+     title:"Customer Relationship Management (CRM) Certification", org:"",
+     line:"Managing customer relationships and records.", tags:["CRM"],
+     points:[["Certification","Customer Relationship Management (CRM) Certification."]]},
+    {id:"comm", badge:"CERTIFIED", big:"Comms", glyph:"B", g:"g4",
+     title:"Business Communication and Stakeholder Management", org:"",
+     line:"Clear communication with stakeholders at every level.", tags:["Communication","Stakeholders"],
+     points:[["Certification","Business Communication and Stakeholder Management Certification."]]}
+  ]
+};
+
+const ABOUT = {badge:"ABOUT", big:"Priyanka Majji", glyph:"P", g:"g1",
+  title:"Business and IT Analyst", org:"United Kingdom",
+  points:[
+    ["Now","Completing an MSc in Artificial Intelligence at Aston University, and open to analyst roles anywhere in the UK. Available immediately."],
+    ["Most recently","Resolved client incidents and service requests in ServiceNow at Tata Consultancy Services, working as the link between clients and the technical teams."],
+    ["Before that","Collections and then Fraud Investigation at Synchrony Financial, and invoice validation at Tech Mahindra, where I became a Subject Matter Expert."],
+    ["Languages","English, Telugu and Hindi."]
+  ]};
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const poster = d => `<div class="poster ${d.g}"><span class="badge">${esc(d.badge)}</span><span class="big">${esc(d.big)}</span><span class="glyph" aria-hidden="true">${esc(d.glyph)}</span></div>`;
+
+document.querySelectorAll("[data-rail]").forEach(rail => {
+  const list = DATA[rail.dataset.rail];
+  rail.innerHTML = list.map(d => `
+    <button class="card" type="button" data-open="${d.id}">
+      ${poster(d)}
+      <div class="card-body">
+        <div class="card-top"><h3>${esc(d.title)}</h3>${d.yr ? `<span class="yr">${esc(d.yr)}</span>` : ""}</div>
+        <p>${esc(d.line)}</p>
+        <div class="tags">${d.tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>
+      </div>
+    </button>`).join("");
+});
+
+const all = Object.values(DATA).flat().reduce((m, d) => (m[d.id] = d, m), {"about-me": ABOUT});
+const dlg = document.getElementById("dlg");
+const content = document.getElementById("dlg-content");
+document.addEventListener("click", e => {
+  const t = e.target.closest("[data-open]");
+  if (!t) return;
+  const d = all[t.dataset.open];
+  const sub = [d.org, d.yr].filter(Boolean).join(" | ");
+  content.innerHTML = `${poster(d)}<div class="modal-body">
+    <h3 id="dlg-title" style="font-size:20px;margin-bottom:2px">${esc(d.title)}</h3>
+    ${sub ? `<div class="sub">${esc(sub)}</div>` : ""}
+    <ul>${d.points.map(([k, v]) => `<li><strong>${esc(k)}.</strong> ${esc(v)}</li>`).join("")}</ul></div>`;
+  dlg.showModal();
+});
+dlg.querySelector(".close").addEventListener("click", () => dlg.close());
+dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+
+document.querySelectorAll(".rail-wrap").forEach(w => {
+  const r = w.querySelector(".rail");
+  w.querySelector(".prev").addEventListener("click", () => r.scrollBy({left: -r.clientWidth * .8, behavior: "smooth"}));
+  w.querySelector(".next").addEventListener("click", () => r.scrollBy({left: r.clientWidth * .8, behavior: "smooth"}));
+});
+
+const nav = document.getElementById("nav");
+addEventListener("scroll", () => nav.classList.toggle("solid", scrollY > 40), {passive: true});
+</script>
+</body>
+</html>
